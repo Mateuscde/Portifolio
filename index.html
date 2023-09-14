@@ -136,6 +136,7 @@
             left: 50%;
             transform: translate(-50%,-50%);
             width: 100%;
+            
             opacity: 0.8;
         }
         #foto{
@@ -212,6 +213,7 @@
             position: relative;
             margin-top: 20px;
             color:white;
+            font-size: 10pt;
             margin-bottom: 100px;
             text-align:center;
         }
@@ -260,7 +262,7 @@
                 background-color: #200050;
                 color: #fff;
                 text-align: center;
-                padding-top:0px;
+                padding-top:00px;
                 padding-bottom:0px;
                 padding-left:10px;
                 padding-right:10px;
@@ -361,6 +363,7 @@
                 left: 50%;
                 transform: translate(-50%,-50%);
                 width: 100%;
+            
                 opacity: 0.8;
             }
             #foto{
@@ -537,7 +540,7 @@
     </div>
     <div id="cont">
      <img id="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEx3Ee-yrCqJjWS0PNQxxzx6RUA8qHMeNZKw&usqp=CAU"\>
-        <img id="logo" src="logo.PNG"></p>
+        <img id="logo" src="logo.png"></p>
     </div>
     
     <nav>
@@ -617,7 +620,7 @@
      <section id="contapk">
          
             <div class="apk">
-                <img onclick="cl2()" class="ico2" src="https://img.freepik.com/vetores-premium/logotipo-da-ilustracao-do-lancamento-do-foguete_224764-59.jpg" alt="Projeto 2"/>
+                <img class="ico2" src="https://img.freepik.com/vetores-premium/logotipo-da-ilustracao-do-lancamento-do-foguete_224764-59.jpg" alt="Projeto 2"/>
                 <h3 class="name">pulo no espaço</h3>
             </div>
             <div class="apk">
@@ -641,7 +644,7 @@
       var body=document.querySelector("body");
       var baixar=document.getElementById("container");
       var c= document.getElementsByClassName("apk");
-      function cl2(){
+      c[0].addEventListener("click", function(){
            baixar.style="display:block;";
       });
     
