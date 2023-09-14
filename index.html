@@ -105,6 +105,7 @@
             width:150px;
         }
         .ico2{
+			cursor:pointer;
             background: black;
             width:100%;
             border-radius:30px;
@@ -345,6 +346,7 @@
                 width:150px;
             }
             .ico2{
+				cursor:pointer;
                 background: black;
                 width:100%;
                 border-radius:30px;
@@ -524,6 +526,7 @@
                     }
             
                     .button {
+						cursor:pointer;
                         background-color: blue;
                         color: white;
                         width:90%;
@@ -537,6 +540,7 @@
                     }
             
                     .small-image {
+						cursor:pointer;
                         position: absolute;
                         top: 10px;
                         right: 10px;
@@ -547,15 +551,15 @@
 <body>
     <img id="view" src="foto.jpg">
      <div id="container">
-        <img class="image" src="https://img.freepik.com/vetores-premium/logotipo-da-ilustracao-do-lancamento-do-foguete_224764-59.jpg" alt="Imagem">
-        <p class="text">pulo no espaço</p>
-        <p style="font-family:arial;">Bem-vindo ao 'Pulo no Espaço'! Desvie de asteroides e colete energia neste jogo de nave espacial demonstrativo. Pilote habilmente sua nave pelo espaço, evitando colisões e acumulando energia cósmica. Uma emocionante aventura intergaláctica aguarda você!</p>
-        <button class="button">Download</button>
-        <img class="small-image" src="https://cdn-icons-png.flaticon.com/512/391/391247.png" alt="Imagem Pequena"/>
+        <img id="imgapk" class="image" src="https://img.freepik.com/vetores-premium/logotipo-da-ilustracao-do-lancamento-do-foguete_224764-59.jpg" alt="Imagem">
+        <p id="nomeapk" class="text">pulo no espaço</p>
+        <p id="infoapk" style="font-family:arial;">Bem-vindo ao 'Pulo no Espaço'! Desvie de asteroides e colete energia neste jogo de nave espacial demonstrativo. Pilote habilmente sua nave pelo espaço, evitando colisões e acumulando energia cósmica. Uma emocionante aventura intergaláctica aguarda você!</p>
+        <a id="linka" href="" download><button class="button">Download</button></a>
+        <img id="fecha"class="small-image" src="https://cdn-icons-png.flaticon.com/512/391/391247.png" alt="Imagem Pequena"/>
     </div>
     <div id="cont">
      <img id="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEx3Ee-yrCqJjWS0PNQxxzx6RUA8qHMeNZKw&usqp=CAU"\>
-        <img id="logo" src="logo.png"></p>
+        <img id="logo" src="logo.PNG"></p>
     </div>
     
     <nav>
@@ -657,10 +661,35 @@
 
     <script>
       var body=document.querySelector("body");
+	  
+      var fecha=document.querySelector("#fecha");
       var baixar=document.getElementById("container");
-      var c= document.getElementsByClassName("apk");
+      var linka=document.getElementById("linka");
+      var imgapk=document.getElementById("imgapk");
+      var nomeapk=document.getElementById("nomeapk");
+      var infoapk=document.getElementById("infoapk");
+      var c  = document.getElementsByClassName("ico2");
+	  
       c[0].addEventListener("click", function(){
+			imgapk.src="https://img.freepik.com/vetores-premium/logotipo-da-ilustracao-do-lancamento-do-foguete_224764-59.jpg";
+			nomeapk.innerHTML="pulo no espaço";
+			infoapk.innerHTML="Bem-vindo ao 'Pulo no Espaço'! Desvie de asteroides e colete energia neste jogo de nave espacial demonstrativo. Pilote habilmente sua nave pelo espaço, evitando colisões e acumulando energia cósmica. Uma emocionante aventura intergaláctica aguarda você!";
+		   linka.href="pulonoespaco.apk";
            baixar.style="display:block;";
+		   body.style="overflow:hidden;";
+      });
+	  c[1].addEventListener("click", function(){
+						imgapk.src="https://img.freepik.com/premium-vector/quiz-logo-with-speech-bubble-symbols-concept-questionnaire-show-sing-quiz-button-question-competition-exam-interview-modern-emblem_180786-72.jpg";
+
+			nomeapk.innerHTML="Codó quiz";
+			infoapk.innerHTML="'Codó quiz',um jogo de perguntas sobe o municipio de codo";
+		   linka.href="codoquiz.apk";
+           baixar.style="display:block;";
+		   body.style="overflow:hidden;";
+      });
+	  fecha.addEventListener("click", function(){
+           baixar.style="display:none;";
+		   body.style="overflow:scroll;";
       });
     
         function cl(){document.getElementById("view").style="display:block;";};
