@@ -6,7 +6,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-            <link rel="icon" href="foto.jpg" type="image/x-icon" />
+			<link rel="icon" href="foto.jpg" type="image/x-icon" />
     <title>mateus carrielly</title>
     <style>
         /* Reset de Estilos */
@@ -19,18 +19,17 @@
         body {
             overflow-x:hidden;
             font-family: Arial, sans-serif;
-           /* background-color: #f0f0f0;*/
            background: black;
         }
-        @media (min-width: 900px) {
+        @media (min-width: 800px) {
         #cont {
             overflow: hidden;
             position: relative;
             background-color: #200050;
             color: #fff;
             text-align: center;
-            padding-top:0px;
-            padding-bottom:0px;
+            padding-top:40px;
+            padding-bottom:40px;
             padding-left:70px;
             padding-right:70px;
         }
@@ -45,7 +44,7 @@
             position: relative;
              z-index: 1;
         }
-        nav{position:sticky;top:0px;z-index:3;}
+        
         nav ul {
             list-style: none;
             display: flex;
@@ -76,7 +75,7 @@
                    padding: 20px;
                    margin: 20px;
                    background:none;
-            background-color: none;
+		    background-color: none;
                    border-radius: 5px;
                    display:flex;
                    flex-direction: rows;
@@ -137,7 +136,8 @@
             left: 50%;
             transform: translate(-50%,-50%);
             width: 100%;
-            opacity:1;
+            height: 45vh;
+            opacity: 0.8;
         }
         #foto{
             position: relative;
@@ -178,29 +178,29 @@
         #sobre{
             background-color: white;
             position: relative;
-            width:70%;
-        top:10px;
+            width:60%;
+	    top:10px;
             left: 50%;
             transform: translate(-50%,0%);
         }
         #myfoto{
-            display:none;
-                position:absolute;
-                width: 100px;
-                left: -150px;
-                top:-3px;
-                border-radius:50%;
-                border:3px solid #1C1C1C;
-                transition:0.2s;
-                cursor:pointer;
+			display:none;
+				position:absolute;
+				width: 100px;
+				left: -150px;
+				top:-3px;
+				border-radius:50%;
+				border:3px solid #1C1C1C;
+				transition:0.2s;
+				cursor:pointer;
         }
-        #myfoto2{
-                position:relative;
-                width:100px;
-                left:10pxpx;
-                top:3px;
-                border:3px solid #1C1C1C;
-                cursor:pointer;
+		#myfoto2{
+				position:relative;
+				width:100px;
+				left:10pxpx;
+				top:3px;
+				border:3px solid #1C1C1C;
+				cursor:pointer;
         }
         #txt{
             text-align: justify;
@@ -209,12 +209,13 @@
             width:auto;
         }
         #contato{
-        background:none;
-        color:white;
-        position: relative;
-        margin-top: 20px;
-        margin-bottom: 100px;
-            }
+	    background-color: none;
+            position: relative;
+            margin-top: 20px;
+			color:white;
+            margin-bottom: 100px;
+			text-align:center;
+        }
         #roda{
             text-align: center;
         }
@@ -225,276 +226,288 @@
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
-        #logo{
-            z-index:1;
-            position:relative;
-            width:80%;}
-        }
-        #view{
-            z-index:4;
-            position:fixed;
-            display:none;
-            width:30%;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        #eu{
-            background-color: white;
-            display:flex;
-            position: relative;
-            width:70%;
-            top:10px;
+		#logo{
+			z-index:1;
+			position:relative;
+			width:80%;}
+		}
+		#view{
+			z-index:4;
+			position:fixed;
+			display:none;
+			width:30%;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		#eu{
+			background-color: white;
+			display:flex;
+			position: relative;
+            width:60%;
+			top:10px;
             left: 50%;
             transform: translate(-50%,0%);
-                
-        }
-        #dados{
-            color:black;
-        }
-        @media (max-width: 900px) {
+				
+		}
+		#dados{
+			color:black;
+		}
+		@media (max-width: 800px) {
+		
+			#cont {
+				overflow: hidden;
+				position: relative;
+				background-color: #200050;
+				color: #fff;
+				text-align: center;
+				padding-top:20px;
+				padding-bottom:20px;
+				padding-left:10px;
+				padding-right:10px;
+			}
+			nav{
+				z-index:3;
+				position:sticky;
+				top:0px;
+			}
+			nav ul {
+				
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				background-color: #4682B4;
+				padding: 5px 0;
+			}
         
-            #cont {
-                overflow: hidden;
-                position: relative;
-                background-color: #200050;
-                color: #fff;
-                text-align: center;
-                padding-top:20px;
-                padding-bottom:20px;
-                padding-left:10px;
-                padding-right:10px;
-            }
-            nav{
-                z-index:3;
-                position:sticky;
-                top:0px;
-            }
-            nav ul {
-                
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                background-color: #4682B4;
-                padding: 5px 0;
-            }
+			nav ul li {
+				margin: 0 10px;
+			}
         
-            nav ul li {
-                margin: 0 10px;
-            }
+			nav ul li a {
+				text-decoration: none;
+				color: #fff;
+				font-weight: bold;
+			}
         
-            nav ul li a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: bold;
-            }
+			section {
+				padding: 10px;
+				margin: 20px;
+				background-color:none;
+				border-radius: 5px;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			}
         
-            section {
-                padding: 10px;
-                margin: 20px;
-                background-color:none;
-                border-radius: 5px;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            }
-        
-            #contapk{
+			#contapk{
                 padding: 20px;
                 margin: 20px;
-                background: none;
+                background-color: none;
                 border-radius: 5px;
                 display:flex;
                 flex-direction: rows;
                    
-            }
+			}
                
-            .project {
-                margin-top: 20px;
-                margin-bottom: 20px;
-                margin-right: 20px;
-                margin-left: 20px;
-                padding: 10px;
-                width: 200px;
-            height: 220px;
-                text-align: center;
-                background: white;
-                border: 1px solid gray;
-                border-radius: 10px;
-                box-shadow: 8px 8px 2px gray;
-            }
-            .apk {
-                margin: 20px;
-                padding: 0px;
-                text-align: center;
-                background:none;
-                border-radius: 10px;
-                width:150px;
-            }
-            .ico2{
-                background: black;
-                width:100%;
-                border-radius:30px;
-            }
-            .name{
-                color:white;
-            }
-            .project img {
-                max-width: 100%;
-                height: auto;
-            }
-            .ico{
-                width:50%;
-            }
+			.project {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-right: 20px;
+				margin-left: 20px;
+				padding: 10px;
+				width: 200px;
+			height: 220px;
+				text-align: center;
+				background: white;
+				border: 1px solid gray;
+				border-radius: 10px;
+				box-shadow: 8px 8px 2px gray;
+			}
+			.apk {
+				margin: 20px;
+				padding: 0px;
+				text-align: center;
+				background:none;
+				border-radius: 10px;
+				width:150px;
+			}
+			.ico2{
+				background: black;
+				width:100%;
+				border-radius:30px;
+			}
+			.name{
+				color:white;
+			}
+			.project img {
+				max-width: 100%;
+				height: auto;
+			}
+			.ico{
+				width:50%;
+			}
         
-            footer {
-                position: fixed;
-                bottom: 0px;
-                width: 100%;
-                text-align: center;
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-            }
-            #banner{
-                z-index: 1;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                width: 100%;
-                height: 45vh;
-                opacity: 0.8;
-            }
-            #foto{
-                position: relative;
-                width: 90%;
-                top:10px;
-                left: 50%;
-                transform: translate(-50%,0%);
-            }
-            #portfolio{
-                background:white;
-                overflow-x: scroll;
-                top: -16px;
-                position: relative;
-                display:grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
-            #myp{
-                color: white;
-                width: 100%;
-                text-align: center;
-                margin-top: 70px;
-                text-transform: uppercase;
-            }
-            a{
-                text-decoration: none;
-                color: black;
-            }
-            .type{
-                font-weight:bold;
-                font-size: 80%;
-                width: 100%;
-                text-align: left;
-                color: blue;
-            }
-            p{
-                text-align: justify;
-            }
-            #sobre{
-                background:white;
-                overflow:hidden;
-                position: relative;
-                width:90%;
-                top:10px;
-                left: 47%;
-                transform: translate(-50%,0%);
-            }
-            #myfoto{
-                display:none;
-                position:absolute;
-                width: 25%;
-                left: 50%;
-                border-radius:50%;
-                border:3px solid #1C1C1C;
-                transform: translate(-50%,0%);
-                box-shadow:0px 0px 20px #1C1C1C;
-            }
-            #myfoto2{
-                position:relative;
-                width:100px;
-                left:10pxpx;
-                top:3px;
-                border:3px solid #1C1C1C;
-                cursor:pointer;
+			footer {
+				position: fixed;
+				bottom: 0px;
+				width: 100%;
+				text-align: center;
+				background-color: #333;
+				color: #fff;
+				padding: 10px 0;
+			}
+			#banner{
+				z-index: 1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 100%;
+				height: 45vh;
+				opacity: 0.8;
+			}
+			#foto{
+				position: relative;
+				width: 90%;
+				top:10px;
+				left: 50%;
+				transform: translate(-50%,0%);
+			}
+			#portfolio{
+				background:white;
+				overflow-x: scroll;
+				top: -16px;
+				position: relative;
+				display:grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+			#myp{
+				color: white;
+				width: 100%;
+				text-align: center;
+				margin-top: 70px;
+				text-transform: uppercase;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			.type{
+				font-weight:bold;
+				font-size: 80%;
+				width: 100%;
+				text-align: left;
+				color: blue;
+			}
+			p{
+				text-align: justify;
+			}
+			#sobre{
+				background:white;
+				overflow:hidden;
+				position: relative;
+				width:90%;
+				top:10px;
+				left: 45%;
+				transform: translate(-50%,0%);
+			}
+			#myfoto{
+				display:none;
+				position:absolute;
+				width: 25%;
+				left: 50%;
+				border-radius:50%;
+				border:3px solid #1C1C1C;
+				transform: translate(-50%,0%);
+				box-shadow:0px 0px 20px #1C1C1C;
+			}
+			#myfoto2{
+				position:relative;
+				width:70px;
+				left:10pxpx;
+				top:3px;
+				border:3px solid #1C1C1C;
+				cursor:pointer;
         }
-            #txt{
-                text-align: justify;
-                position:relative ;
-                left: 0px;
-                font-size:80%;
-                width:auto;
-            }
-            #contato{
-                background:none;
-                color:white;
-                position: relative;
-                margin-top: 20px;
-                margin-bottom: 100px;
-                font-size:70%;
-            }
-            #roda{
-                text-align: center;
-            }
-            .namep{
-                padding: 10px;
-                margin: 20px;
-                background-color: #fff;
-                border-radius: 5px;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            }
-            #logo{
-                z-index:1;
-                position:relative;
-                width:100%;
-            }
-            #view{
-                z-index:4;
-                position:fixed;
-                display:none;
-                width:50%;
-                top:50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-            }
-        #eu{
-            background:white;
-            display:flex;
-            position: relative;
+			#txt{
+				text-align: justify;
+				position:relative ;
+				left: 0px;
+				font-size:60%;
+				width:auto;
+			}
+			#contato{
+				background:none;
+				color:white;
+				position: relative;
+				margin-top: 20px;
+				margin-bottom: 100px;
+			}
+			#roda{
+				width:100%;
+				text-align: center;
+			}
+			.namep{
+				padding: 10px;
+				margin: 20px;
+				background-color: #fff;
+				border-radius: 5px;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			}
+			#logo{
+				z-index:1;
+				position:relative;
+				width:100%;
+			}
+			#view{
+				z-index:4;
+				position:fixed;
+				display:none;
+				width:30%;
+				top:50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		#eu{
+			background:white;
+			display:flex;
+			position: relative;
             width:90%;
-            top:10px;
-            left:47%;
-            transform: translate(-50%,0%);
-                
-        }
-        #dados{
-            margin-top:8px;
-            font-size:85%;
-            color:black;
-        }
-        
-        }
+			top:10px;
+            left:0%;
+            transform: translate(0%,0%);
+				
+		}
+		#dados{
+			margin-top:8px;
+			font-size:57%;
+			color:black;
+		}
+		
+		}
+		#baixar{
+			z-index:3;
+			border-radius:20px;
+			background-color: #fff;
+			width:40%;
+			height:200px;
+			position:fixed;
+			top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+		}
     </style>
 </head>
 <body>
-    <img id="view" src="foto.jpg">
+	<img id="view" src="foto.jpg">
+	<div id="baixar"></div>
     <div id="cont">
      <img id="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEx3Ee-yrCqJjWS0PNQxxzx6RUA8qHMeNZKw&usqp=CAU"\>
-        <img id="logo" src="logo.PNG"></p>
+        <img id="logo" src="logo.png"></p>
     </div>
     
     <nav>
         <ul>
-            <li><a href="#cont">SOBRE MIM</a></li>
+            <li><a href="#sobre">SOBRE MIM</a></li>
             <li><a href="#myp">PROJETOS</a></li>
             <li><a href="#contato">CONTATO</a></li>
         </ul>
@@ -502,24 +515,24 @@
     
     <!--<img id="foto" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/256526723/original/6fcbc802e4e479eb00f899d6f4c8225d5b68d233/design-pixel-art-banner-for-twitter-youtube-twitch.png"/>-->
     
-    <section id="eu">
-        <img id="myfoto2"  onclick="cl()" src="foto.jpg">
-        <p id="dados" style="margin-left:19px;">
-        <strong>NOME:</strong> Mateus Cavalcante Ribeiro.
-        <br/><strong>IDADE:</strong> 19 anos.
-        <br/><strong>SEXO:</strong> masculino.
-        <br/><strong>CEP:</strong>    65400000.
-        <br/><strong>ENDEREÇO:</strong> Rua São Luis nº1908-b, Codó novo.
-        <br/><strong>FORMAÇÃO:</strong> técnico em montagem e manutenção e suporte a TI.
-        </p>
+	<section id="eu">
+		<img id="myfoto2"  onclick="cl()" src="foto.jpg">
+		<p id="dados" style="margin-left:19px;">
+		<strong>NOME:</strong> Mateus Cavalcante Ribeiro.
+		<br/><strong>IDADE:</strong> 19 anos.
+		<br/><strong>SEXO:</strong> masculino.
+		<br/><strong>CEP:</strong>	65400000.
+		<br/><strong>ENDEREÇO:</strong> Rua São Luis nº1908-b, Codó novo.
+		<br/><strong>FORMAÇÃO:</strong> técnico em montagem e manutenção e suporte a TI.
+		</p>
     </section>
-    <section id="sobre">
-    <img id="myfoto" src="foto.jpg"/>
+	<section id="sobre">
+	<img id="myfoto" src="foto.jpg"/>
         <!--<h2>Sobre Mim</h2>-->
         
         <p id="txt">
-         Sou um entusiasta de <strong style="color:#FF4500;">HTML</strong>, <strong style="color:#00008B;">CSS</strong> e <strong style="color:    #FF8C00";>JavaScript</strong>, apaixonado por desenvolvimento web e criação de jogos. Embora meu trabalho seja um hobby, não comprometo a qualidade. Explore meu portfólio para ver meus projetos criativos e sinta-se à vontade para entrar em contato para colaborações ou compartilhar ideias. Vamos continuar explorando o mundo digital juntos!.
-        </p>
+         Sou um entusiasta de <strong style="color:#FF4500;">HTML</strong>, <strong style="color:#00008B;">CSS</strong> e <strong style="color:	#FF8C00";>JavaScript</strong>, apaixonado por desenvolvimento web e criação de jogos. Embora meu trabalho seja um hobby, não comprometo a qualidade. Explore meu portfólio para ver meus projetos criativos e sinta-se à vontade para entrar em contato para colaborações ou compartilhar ideias. Vamos continuar explorando o mundo digital juntos!.
+		</p>
     </section>
     
     <h2 id="myp">Meus projetos</h2>
@@ -556,10 +569,10 @@
         
         <a href="https://mateuscde.github.io/Ex1/">
         <div class="project">
-            <img class="ico" src="https://raw.githubusercontent.com/Mateuscde/Ex1/main/Ico2.jpg" alt="Projeto 2">
-            <h3>bem-estar</h3>
+            <img class="ico" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZM1fcVn_SVp_1ArIkjrMwwIjNLwpXh7sHA&usqp=CAU" alt="Projeto 2">
+            <h3>bambup</h3>
             <p class="type">TIPO: SITE</p>
-            <p>dicas e informações para melhorar seu estilo de vida.</p>
+            <p>aviso e proteção animal</p>
         </div>
         </a>
     </section>
@@ -568,12 +581,12 @@
     </section>
      <section id="contapk">
          
-             <a href="Pulonoespaco.apk" download><div class="apk">
-                <img class="ico2" src="https://raw.githubusercontent.com/Mateuscde/Ex1/main/Ico2.jpg" alt="Projeto 2"/>
-                <h3 class="name">pulo no espaço</h3>
-            </div></a>
             <div class="apk">
-                <img class="ico2" src="https://raw.githubusercontent.com/Mateuscde/Ex1/main/Ico2.jpg" alt="Projeto 2"/>
+                <img class="ico2" src="https://img.freepik.com/vetores-premium/logotipo-da-ilustracao-do-lancamento-do-foguete_224764-59.jpg" alt="Projeto 2"/>
+                <h3 class="name">pulo no espaço</h3>
+            </div>
+            <div class="apk">
+                <img class="ico2" src="https://img.freepik.com/premium-vector/quiz-logo-with-speech-bubble-symbols-concept-questionnaire-show-sing-quiz-button-question-competition-exam-interview-modern-emblem_180786-72.jpg" alt="Projeto 2"/>
                 <h3 class="name" >quiz Codó</h3>
             </div>
             
@@ -590,8 +603,8 @@
     </footer>
 
     <script>
-        function cl(){document.getElementById("view").style="display:block;"};
-        document.getElementById("view").addEventListener("click", function(){document.getElementById("view").style="display:none;"})
-    </script>
+		function cl(){document.getElementById("view").style="display:block;";};
+		document.getElementById("view").addEventListener("click", function(){document.getElementById("view").style="display:none;"})
+	</script>
 </body>
 </html>
